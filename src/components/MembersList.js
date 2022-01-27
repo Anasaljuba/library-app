@@ -5,7 +5,6 @@ import libraryStore from "./LibraryStore";
 import MemberItem from "./MemberItem";
 
 const MembersList = () => {
-  console.log(libraryStore.membersData);
   const memeberList = libraryStore.membersData.map((member) => (
     <MemberItem indvMember={member} />
   ));
