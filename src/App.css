@@ -6,10 +6,58 @@
   width: 300px;
   margin: 20px;
   padding: 10px;
+  text-align: center;
 }
 
 .memberList {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bookItem {
+  background-color: papayawhip;
+  width: 400px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.bookList {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+Button {
+  margin: 20px;
+}
+
+.searchBar {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.selectArea {
+  width: 200px;
+}
+
+.mainBookList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addBookArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.links {
+  text-decoration: none;
+  margin: 10px;
 }

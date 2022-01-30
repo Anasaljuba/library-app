@@ -4,6 +4,14 @@ import books from "../books";
 class LibraryStore {
   booksData = books;
   membersData = members;
+  genreList = [
+    "fiction",
+    "biography",
+    "business",
+    "entreperneurship",
+    "fantasy",
+    "crime",
+  ];
 
   constructor() {
     makeAutoObservable(this);
@@ -14,6 +22,13 @@ class LibraryStore {
       member.firstName.toLowerCase() + "-" + member.lastName.toLowerCase();
     this.membersData.push(member);
     console.log(member);
+  };
+
+  handleAddBook = (book) => {
+    book.id = this.booksData[this.booksData.length - 1].id + 1;
+    book.slug = book.title.toLowerCase();
+    this.booksData.push(book);
+    console.log(book);
   };
 }
 

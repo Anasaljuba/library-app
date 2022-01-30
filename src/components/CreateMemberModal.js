@@ -28,8 +28,9 @@ const CreateMemberModal = () => {
 
   const handleOnDropBook = (event) => {
     //book is not assigned
-    setBooksBorrowed([...booksBorrowed, event]);
-    setAddMember({ ...addMember, currentlyBorrowedBooks: booksBorrowed });
+    const thebooksBorrowed = [...booksBorrowed, event];
+    setBooksBorrowed(thebooksBorrowed);
+    setAddMember({ ...addMember, currentlyBorrowedBooks: thebooksBorrowed });
     libraryStore.booksData.find((book) => {
       if (+book.id === +event) {
         book.available = false;

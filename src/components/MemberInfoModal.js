@@ -33,7 +33,7 @@ const MemberInfoModal = ({ indvMember }) => {
             <strong>Last Name</strong>: {indvMember.lastName}
           </h4>
           <h4>
-            <strong>MemberShip</strong>: {indvMember.membership}
+            <strong>Membership</strong>: {indvMember.membership}
           </h4>
           <h4>
             <strong>Books Borrowed</strong>: {bookIdName}
