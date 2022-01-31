@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import libraryStore from "./LibraryStore";
+
 const MemberInfoModal = ({ indvMember }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);

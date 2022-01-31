@@ -14,14 +14,23 @@
   flex-direction: column;
   align-items: center;
 }
-
+h5 {
+  color: #3d405b;
+}
 .bookItem {
-  background-color: papayawhip;
+  background-color: #f4f1de;
   width: 400px;
+  height: 190px;
   margin: 20px;
   padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 13px -3px rgba(0, 0, 0, 0.52);
+  box-shadow: 5px 5px 13px -3px rgba(0, 0, 0, 0.52);
+  transition: 0.25s ease-in-out;
 }
-
+.bookItem:hover {
+  transform: scale(1.1);
+}
 .bookList {
   display: flex;
   flex-direction: column;
@@ -60,4 +69,21 @@ Button {
 .links {
   text-decoration: none;
   margin: 10px;
+}
+
+.button {
+  border: none;
+  color: #090909;
+  padding: 0.5em 1.5em;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }

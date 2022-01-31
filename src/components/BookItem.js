@@ -1,4 +1,5 @@
 import React from "react";
+import BookInfoModal from "./BookInfoModal";
 
 const BookItem = ({ book }) => {
   return (
@@ -12,6 +13,8 @@ const BookItem = ({ book }) => {
       <h5>
         <strong>Genre</strong> : {book.genre.join(", ")}
       </h5>
+
+      <BookInfoModal book={book} />
     </div>
   );
 };
